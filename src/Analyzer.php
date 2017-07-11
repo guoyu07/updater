@@ -33,7 +33,7 @@ class Analyzer
 	/**
 	 * @param ParserReflection\ReflectionClass[]
 	 */
-	public function analyze(array $classes, bool $dryRun = TRUE): void
+	public function analyze(array $classes, bool $dryRun = true): void
 	{
 		$this->dryRun = $dryRun;
 		foreach ($classes as $class) {
@@ -80,7 +80,7 @@ class Analyzer
 		if ($analyzed) {
 			return;
 		}
-		$analyzed = TRUE;
+		$analyzed = true;
 
 		if ($protoMethod->isFinal()) {
 			$this->write($method, "overriding final method $protoName");
@@ -129,7 +129,7 @@ class Analyzer
 				if (!$this->dryRun && $protoParam->hasType() && !$param->hasType()) {
 					$tokenPos = $method->getClassMethodNode()->getParams()[$pos]->getAttribute('startTokenPos');
 					$patches[$tokenPos] =
-						($protoParam->allowsNull() && (!$protoParam->isDefaultValueAvailable() || $protoParam->getDefaultValue() !== NULL) ? '?' : '')
+						($protoParam->allowsNull() && (!$protoParam->isDefaultValueAvailable() || $protoParam->getDefaultValue() !== null) ? '?' : '')
 						. ($protoParam->getType()->isBuiltin() ? '' : '\\')
 						. $this->getType($protoParam) . ' ';
 

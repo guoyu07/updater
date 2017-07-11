@@ -4,7 +4,7 @@ namespace ParamsReferenceOk3;
 
 class A
 {
-	function test(&$a = NULL)
+	function test(&$a = null)
 	{
 	}
 }
@@ -12,7 +12,7 @@ class A
 
 class B extends A
 {
-	function test(&$a = NULL)
+	function test(&$a = null)
 	{
 	}
 }

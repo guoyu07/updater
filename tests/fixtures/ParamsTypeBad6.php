@@ -4,7 +4,7 @@ namespace ParamsTypeBad6;
 
 class A
 {
-	function test($a = NULL)
+	function test($a = null)
 	{
 	}
 }
@@ -12,7 +12,7 @@ class A
 
 class B extends A
 {
-	function test(int $a = NULL)
+	function test(int $a = null)
 	{
 	}
 }

@@ -29,7 +29,7 @@ class ReflectionContext extends ParserReflection\ReflectionContext
 		) {
 			return new \ReflectionClass($name);
 		}
-		return new ParserReflection\ReflectionClass($name, NULL, $this);
+		return new ParserReflection\ReflectionClass($name, null, $this);
 	}
 
 

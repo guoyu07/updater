@@ -43,7 +43,7 @@ class Collector
 		foreach ($iterator as $fileName) {
 			echo $fileName . str_repeat(' ', 30) . "\r";
 			try {
-				$file = new ParserReflection\ReflectionFile($fileName, NULL, $reflectionContext);
+				$file = new ParserReflection\ReflectionFile($fileName, null, $reflectionContext);
 			} catch (PhpParser\Error $e) {
 				echo $this->console->color('white/red', 'ERROR:') . " {$e->getMessage()} in file $fileName\n";
 				continue;
@@ -85,6 +85,6 @@ class Collector
 	{
 		return isset($this->classes[$name])
 			? $this->classes[$name]->getFileName()
-			: NULL;
+			: null;
 	}
 }

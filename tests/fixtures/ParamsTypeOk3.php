@@ -12,7 +12,7 @@ class A
 
 class B extends A
 {
-	function test(int $a = NULL)
+	function test(int $a = null)
 	{
 	}
 }

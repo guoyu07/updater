@@ -23,7 +23,7 @@ set_error_handler(function ($severity, $message, $file, $line) {
 	if (($severity & error_reporting()) === $severity) {
 		throw new \ErrorException($message, 0, $severity, $file, $line);
 	}
-	return FALSE;
+	return false;
 });
 
 
@@ -43,8 +43,8 @@ Options:
 
 XX
 , [
-	'path' => [CommandLine::REALPATH => TRUE],
-	'--ignore' => [CommandLine::REPEATABLE => TRUE],
+	'path' => [CommandLine::REALPATH => true],
+	'--ignore' => [CommandLine::REPEATABLE => true],
 ]);
 
 if ($cmd->isEmpty()) {
