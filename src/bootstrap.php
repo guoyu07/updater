@@ -9,7 +9,7 @@ use Nette\CommandLine\Parser as CommandLine;
 
 
 if (@!include __DIR__ . '/../vendor/autoload.php') {
-	echo('Install packages using `composer update`');
+	echo 'Install packages using `composer update`';
 	exit(1);
 }
 
@@ -32,7 +32,7 @@ Nette Updater v0.1
 ------------------
 ';
 
-$cmd = new CommandLine(<<<XX
+$cmd = new CommandLine(<<<'XX'
 Usage:
     updater [options] <directory>
 

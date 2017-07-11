@@ -198,5 +198,4 @@ class Analyzer
 	{
 		echo $this->console->color($color, $method->getDeclaringClass()->getName() . '::' . $method->getName() . '()') . " $message\n";
 	}
-
 }

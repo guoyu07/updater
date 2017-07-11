@@ -87,5 +87,4 @@ class Collector
 			? $this->classes[$name]->getFileName()
 			: NULL;
 	}
-
 }

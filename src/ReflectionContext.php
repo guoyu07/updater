@@ -10,7 +10,6 @@ use PhpParser;
 
 class ReflectionContext extends ParserReflection\ReflectionContext
 {
-
 	public function __construct(ParserReflection\LocatorInterface $locator)
 	{
 		parent::__construct($locator);
@@ -42,5 +41,4 @@ class ReflectionContext extends ParserReflection\ReflectionContext
 		}
 		return $file;
 	}
-
 }
