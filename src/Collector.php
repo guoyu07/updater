@@ -27,7 +27,7 @@ class Collector
 	/**
 	 * @return ParserReflection\ReflectionClass[]
 	 */
-	public function collect(\Traversable $iterator): array
+	public function collect(iterable $iterator): array
 	{
 		$this->parseFiles($iterator);
 		$this->completeClasses();
